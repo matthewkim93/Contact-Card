@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The CodingDojo Contact page</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(document).on('click','button',function(){
+          $('textarea[name="description"]').text()
+          $('#allusers').append('<div descrip="'+$('textarea[name="description"]').val()+'">'+'<h1>' + $('input[name="first_name"]').val()+' '+ $('input[name="last_name"]').val() + '</h1>' + 'Click for Description!' + '</div>');
+          $('#allusers').children().addClass('users')
+        });
+        $(document).on('click','.users',function(){
+          $(this).text($(this).attr('descrip'));
+          $(this).removeClass('users').addClass('clickedon')
+        });
+        $(document).on('click','.clickedon',function(){
+          $(this).hide(700);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="background">
+      <div id="adduser">
+        First Name: <input type="text" name="first_name" value="First Name"><br>
+        Last Name: <input type="text" name="last_name" value="Last Name">
+        <br>
+        <br>
+        Description:<br>
+        <textarea name="description">Enter Description</textarea>
+        <br>
+        <button type="button">Add User</button>
+      </div>
+      <div id="allusers">
+      </div>
+    </div>
+  </body>
+</html>

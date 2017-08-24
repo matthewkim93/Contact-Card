@@ -1,0 +1,57 @@
+*{
+  font-family: sans-serif;
+}
+#background{
+  background: -webkit-linear-gradient(rgb(12, 46, 102),gray);
+  width:970px;
+  padding:15px;
+  display: inline-block;
+  color:rgb(198, 153, 25);
+  font-weight: bold;
+  font-size: 20px;
+}
+button{
+  width:100px;
+  height:50px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(rgb(124, 93, 7),rgb(186, 137, 1));
+  margin-left:100px;
+  margin-top:15px;
+  border:3px solid rgb(150, 116, 21);
+}
+input{
+  width:200px;
+  border-radius: 5px;
+  border:3px solid rgb(150, 116, 21);
+}
+textarea{
+  border-radius: 5px;
+  width:300px;
+  height:200px;
+  border:3px solid rgb(150, 116, 21);
+}
+#adduser, #allusers{
+  width:450px;
+  display:inline-block;
+  vertical-align: top;
+}
+#allusers{
+  text-align: center;
+
+}
+#allusers div{
+  background-color:white;
+  height:150px;
+  width:450px;
+  display:inline-block;
+  margin-bottom: 15px;
+  color:black;
+  border-radius: 10px;
+  border:3px solid rgb(150, 116, 21);
+}
+#allusers h1{
+  margin:0px;
+  line-height: 150px 0px;
+}
